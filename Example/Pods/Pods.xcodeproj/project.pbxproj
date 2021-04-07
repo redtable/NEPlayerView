@@ -11,6 +11,11 @@
 		0D01BA596D5484DF690F9418E9F111E8 /* Pods-NEPlayerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C629681DC2953E1DC1DCEE63E2500 /* Pods-NEPlayerView_Example-dummy.m */; };
 		0D99301B4A3534E04A93D973CC280D4F /* Pods-NEPlayerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D49BB719AA2EE3BAED753AF313DA0D00 /* Pods-NEPlayerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FAAAD99D5C6C21A86D74C28406320AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		36579858261DBF520070B0E9 /* NEPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 36579856261DBF520070B0E9 /* NEPlayerView.h */; };
+		36579859261DBF520070B0E9 /* NEPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36579857261DBF520070B0E9 /* NEPlayerView.m */; };
+		36579862261DBF6F0070B0E9 /* NEAVPlayerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 36579860261DBF6F0070B0E9 /* NEAVPlayerCore.h */; };
+		36579863261DBF6F0070B0E9 /* NEAVPlayerCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 36579861261DBF6F0070B0E9 /* NEAVPlayerCore.m */; };
+		36579868261DBF8F0070B0E9 /* NEPlayerCoreProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 36579867261DBF8F0070B0E9 /* NEPlayerCoreProtocol.h */; };
 		4631E64E91D46C8A7297814C838DE5E4 /* Pods-NEPlayerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D895B00662A51F21C0CFD2832D00D92 /* Pods-NEPlayerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46A2BCA365046914BE30C65D5DDEFAF2 /* NEPlayerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D33267F297A708010BD212B4B17DDA0 /* NEPlayerView-dummy.m */; };
 		8F438A03E62B2136C6D005B112E55875 /* NEPlayerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D2A9116C4AFBD41207200FD791E0D5 /* NEPlayerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		065801583262EAF8E84DB53F06D9735F /* NEPlayerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NEPlayerView.framework; path = NEPlayerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		065801583262EAF8E84DB53F06D9735F /* NEPlayerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NEPlayerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C87B4808951A82C68FDF781527A70A /* NEPlayerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NEPlayerView.modulemap; sourceTree = "<group>"; };
 		0D895B00662A51F21C0CFD2832D00D92 /* Pods-NEPlayerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NEPlayerView_Example-umbrella.h"; sourceTree = "<group>"; };
 		15CD9A8347B5887E06AD531B11331BEB /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = NEPlayerView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
@@ -45,30 +50,35 @@
 		30A563445B3D439B3DA780428B18CC51 /* Pods-NEPlayerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEPlayerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		340C629681DC2953E1DC1DCEE63E2500 /* Pods-NEPlayerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NEPlayerView_Example-dummy.m"; sourceTree = "<group>"; };
+		36579856261DBF520070B0E9 /* NEPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NEPlayerView.h; path = NEPlayerView/Classes/NEPlayerView.h; sourceTree = "<group>"; };
+		36579857261DBF520070B0E9 /* NEPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NEPlayerView.m; path = NEPlayerView/Classes/NEPlayerView.m; sourceTree = "<group>"; };
+		36579860261DBF6F0070B0E9 /* NEAVPlayerCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NEAVPlayerCore.h; path = NEPlayerView/Classes/NEAVPlayerCore.h; sourceTree = "<group>"; };
+		36579861261DBF6F0070B0E9 /* NEAVPlayerCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NEAVPlayerCore.m; path = NEPlayerView/Classes/NEAVPlayerCore.m; sourceTree = "<group>"; };
+		36579867261DBF8F0070B0E9 /* NEPlayerCoreProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NEPlayerCoreProtocol.h; path = NEPlayerView/Classes/NEPlayerCoreProtocol.h; sourceTree = "<group>"; };
 		46BD588CD7DAE5DB1BD192E1BAC98A91 /* Pods-NEPlayerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEPlayerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		473C05832B6A0D510EA064214BA24C85 /* Pods-NEPlayerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEPlayerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		48D2A9116C4AFBD41207200FD791E0D5 /* NEPlayerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NEPlayerView-umbrella.h"; sourceTree = "<group>"; };
-		4D2B7E599A8BF7590A7773DB137D772B /* Pods_NEPlayerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NEPlayerView_Tests.framework; path = "Pods-NEPlayerView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2B7E599A8BF7590A7773DB137D772B /* Pods_NEPlayerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEPlayerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5E411BD80040A301580D3E47CD6C60 /* Pods-NEPlayerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NEPlayerView_Tests.modulemap"; sourceTree = "<group>"; };
 		5CCF178E413BBD3D1AF10AA0A2F437D7 /* Pods-NEPlayerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEPlayerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		653CECAB9EDCE8BD8DC354185D09701B /* Pods-NEPlayerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NEPlayerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6EFF0AF27D0503843C268380062F169D /* NEPlayerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NEPlayerView-prefix.pch"; sourceTree = "<group>"; };
 		7D33267F297A708010BD212B4B17DDA0 /* NEPlayerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NEPlayerView-dummy.m"; sourceTree = "<group>"; };
-		7F355647380CFECB9BE0C848799F581C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7F355647380CFECB9BE0C848799F581C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		80BB429992A17A63373492C12260ACAE /* NEPlayerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NEPlayerView.xcconfig; sourceTree = "<group>"; };
 		8FE784B7EE4BF6C45ECE24167AE696C9 /* NEPlayerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NEPlayerView-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0DC0C634999BBE0B9C980F5D468C33F /* Pods-NEPlayerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEPlayerView_Example-Info.plist"; sourceTree = "<group>"; };
 		B14B6A28AA210EFEC8B75FF99CAF9C47 /* Pods-NEPlayerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEPlayerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C17D70EE8BE09291C62BC2E573704346 /* Pods-NEPlayerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NEPlayerView_Tests-dummy.m"; sourceTree = "<group>"; };
-		CA79A48E356B2B8F594B1D231E8972C0 /* NEPlayerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NEPlayerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CA79A48E356B2B8F594B1D231E8972C0 /* NEPlayerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NEPlayerView.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		D49BB719AA2EE3BAED753AF313DA0D00 /* Pods-NEPlayerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NEPlayerView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D78729B73B8DD4BEEF99636E6FB87080 /* Pods-NEPlayerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NEPlayerView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DA37A6C34C3772F5F51B0C5D8CEA3071 /* Pods-NEPlayerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NEPlayerView_Example.modulemap"; sourceTree = "<group>"; };
 		DEEFAD3AD1C8B55B62841D319EBECA6E /* Pods-NEPlayerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEPlayerView_Tests-Info.plist"; sourceTree = "<group>"; };
 		DFCF5074BDA6B3795456AFC32725CA88 /* Pods-NEPlayerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEPlayerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EC82AACC7E7D974ECB1DA759AAE3C05F /* Pods_NEPlayerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NEPlayerView_Example.framework; path = "Pods-NEPlayerView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF6C280FFE7865A3684CFC5DC931186A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EC82AACC7E7D974ECB1DA759AAE3C05F /* Pods_NEPlayerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEPlayerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6C280FFE7865A3684CFC5DC931186A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +197,11 @@
 			isa = PBXGroup;
 			children = (
 				15CD9A8347B5887E06AD531B11331BEB /* ReplaceMe.m */,
+				36579856261DBF520070B0E9 /* NEPlayerView.h */,
+				36579857261DBF520070B0E9 /* NEPlayerView.m */,
+				36579860261DBF6F0070B0E9 /* NEAVPlayerCore.h */,
+				36579861261DBF6F0070B0E9 /* NEAVPlayerCore.m */,
+				36579867261DBF8F0070B0E9 /* NEPlayerCoreProtocol.h */,
 				2581DDCE14CBF229FFB3707354F555C0 /* Pod */,
 				035328547AC7F485A5C05A2F43FEDEEB /* Support Files */,
 			);
@@ -245,6 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F438A03E62B2136C6D005B112E55875 /* NEPlayerView-umbrella.h in Headers */,
+				36579862261DBF6F0070B0E9 /* NEAVPlayerCore.h in Headers */,
+				36579858261DBF520070B0E9 /* NEPlayerView.h in Headers */,
+				36579868261DBF8F0070B0E9 /* NEPlayerCoreProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,8 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36579859261DBF520070B0E9 /* NEPlayerView.m in Sources */,
 				46A2BCA365046914BE30C65D5DDEFAF2 /* NEPlayerView-dummy.m in Sources */,
 				A1053313CFCF78942B5347C5728DE4D5 /* ReplaceMe.m in Sources */,
+				36579863261DBF6F0070B0E9 /* NEAVPlayerCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,8 +606,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
