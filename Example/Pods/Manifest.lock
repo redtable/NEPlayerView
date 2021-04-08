@@ -1,0 +1,16 @@
+PODS:
+  - NEPlayerView (0.1.0)
+
+DEPENDENCIES:
+  - NEPlayerView (from `../`)
+
+EXTERNAL SOURCES:
+  NEPlayerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NEPlayerView: 8875e6e0252492081a6094a812986db93460c4e2
+
+PODFILE CHECKSUM: 8c5d7033d6f261112ab12788ecb5f20e0f90304f
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'NEPlayerView_Example' do
+  pod 'NEPlayerView', :path => '../'
+
+  target 'NEPlayerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
