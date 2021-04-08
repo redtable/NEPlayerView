@@ -1,16 +1,23 @@
 PODS:
+  - Masonry (1.1.0)
   - NEPlayerView (0.1.0)
 
 DEPENDENCIES:
+  - Masonry
   - NEPlayerView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
 
 EXTERNAL SOURCES:
   NEPlayerView:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   NEPlayerView: 8875e6e0252492081a6094a812986db93460c4e2
 
-PODFILE CHECKSUM: 8c5d7033d6f261112ab12788ecb5f20e0f90304f
+PODFILE CHECKSUM: 2e086af6e76ca05bc113de2d453a88807280306e
 
 COCOAPODS: 1.8.4

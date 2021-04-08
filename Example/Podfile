@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'NEPlayerView_Example' do
   pod 'NEPlayerView', :path => '../'
+  pod 'Masonry'
 
   target 'NEPlayerView_Tests' do
     inherit! :search_paths

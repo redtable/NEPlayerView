@@ -11,6 +11,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol NEPlayerCoreProtocol <NSObject>
 
+@property (nonatomic, strong) CALayer * mediaLayer;
+
+- (void)playWithURL:(NSURL *)URL;
+
+- (void)play;
+
+- (void)pause;
+
+- (void)stop;
+
+- (void)seekToTime:(NSTimeInterval)time completion:(void(^)(BOOL isFinished))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END

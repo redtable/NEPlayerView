@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NEPlayerCoreProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NEAVPlayerCore : NSObject
+@interface NEAVPlayerCore : NSObject <NEPlayerCoreProtocol>
 
 @end
 
